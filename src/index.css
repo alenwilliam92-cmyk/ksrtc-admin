@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #af101a;
+  --color-primary-container: #d32f2f;
+  --color-on-primary-container: #fff2f0;
+  --color-secondary: #4c56af;
+  --color-secondary-container: #959efd;
+  --color-tertiary: #715300;
+  --color-emergency: #B71C1C;
+  --color-womensafety: #E91E63;
+  --color-status-low: #4CAF50;
+  --color-status-medium: #FF9800;
+  --color-swift: #212121;
+  --color-surface-container: #f0eded;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container-high: #eae7e7;
+  --color-surface-container-highest: #e5e2e1;
+  
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-code: "Fira Code", monospace;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+@layer utilities {
+  .pulse-red {
+    animation: pulse 2s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(175, 16, 26, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(175, 16, 26, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(175, 16, 26, 0); }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e5e2e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8f6f6c;
+}

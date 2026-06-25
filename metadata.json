@@ -1,0 +1,6 @@
+{
+  "name": "Transit Safety Hub",
+  "description": "An incident management and live dispatcher control center for Kerala KSRTC administration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
