@@ -14,7 +14,7 @@ export function SettingsTab({ onResetDB }: SettingsTabProps) {
 
   return (
     <div className="max-w-3xl mx-auto space-y-6 font-sans">
-      
+
       {/* Dispatcher Profile Card */}
       <section className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
         <h2 className="font-display font-bold text-slate-800 text-[16px] mb-4 flex items-center gap-2">
@@ -47,29 +47,6 @@ export function SettingsTab({ onResetDB }: SettingsTabProps) {
             <span className="text-slate-400 font-semibold uppercase tracking-tight text-[10px]">Secure VoIP Link</span>
             <p className="font-bold text-slate-800 mt-0.5">+91-VOIP-882-KSRTC</p>
           </div>
-        </div>
-      </section>
-
-      {/* Secrets & API Configuration instructions */}
-      <section className="bg-gradient-to-br from-indigo-50/20 to-indigo-100/10 border border-indigo-200/50 p-6 rounded-2xl shadow-sm space-y-4">
-        <div>
-          <div className="flex items-center gap-2">
-            <span className="material-symbols-outlined text-indigo-700 text-xl animate-bounce">key</span>
-            <h2 className="font-display font-bold text-indigo-950 text-[16px]">AI Features Configuration</h2>
-          </div>
-          <p className="text-xs text-indigo-900/80 font-medium mt-1 leading-relaxed">
-            The **Auto-severity classification** feature is backed by the Gemini API.
-          </p>
-        </div>
-
-        <div className="bg-white p-4 rounded-xl border border-indigo-100 space-y-2.5 shadow-xs font-sans text-xs">
-          <p className="font-bold text-slate-800">Follow these simple steps in the workspace to authorize your API key:</p>
-          <ul className="space-y-1 text-slate-500 list-disc list-inside">
-            <li>Find the **Secrets** or **Settings** button in the AI Studio sidebar menu.</li>
-            <li>Create or input a variable named <code className="font-mono bg-indigo-50 text-indigo-700 px-1 py-0.5 rounded text-[10px] font-extrabold">GEMINI_API_KEY</code>.</li>
-            <li>Paste your secure Google AI Studio API Key.</li>
-            <li>Click **Accept** inside the panel. Your key serves server-side requests with absolute privacy.</li>
-          </ul>
         </div>
       </section>
 
